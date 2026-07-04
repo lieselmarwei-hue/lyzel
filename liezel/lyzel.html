@@ -102,10 +102,34 @@
     </section>
 
     <section id="contact" class="section-light full-screen-section">
-      <div class="container py-5 text-center">
-        <h2>Ready to build something amazing?</h2>
-        <p>Let’s create a website that helps your business stand out and attract more customers.</p>
-        <a href="mailto:hello@yourbusiness.com" class="btn btn-primary btn-lg">Contact Us</a>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-4">
+              <h2>Ready to build something amazing?</h2>
+              <p>Let’s create a website that helps your business stand out and attract more customers.</p>
+            </div>
+            <form class="contact-form" action="mailto:hello@yourbusiness.com" method="post" enctype="text/plain">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input class="form-control form-input" type="text" name="Name" placeholder="Your name" required />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control form-input" type="email" name="Email" placeholder="Your email" required />
+                </div>
+                <div class="col-12">
+                  <input class="form-control form-input" type="text" name="Subject" placeholder="Subject" />
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control form-input" name="Message" rows="5" placeholder="How can we help?" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 <!-------------------------------------- Footer -------------------------------------->

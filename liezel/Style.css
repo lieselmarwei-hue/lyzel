@@ -96,6 +96,29 @@ section {
   margin: 0;
 }
 
+.contact-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.contact-form .form-input {
+  border: 1px solid #d1d5db;
+  border-radius: 0.85rem;
+  padding: 1rem 1.1rem;
+  box-shadow: none;
+}
+
+.contact-form textarea.form-input {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  min-width: 220px;
+}
+
 .parallax-section {
   position: relative;
   color: white;
