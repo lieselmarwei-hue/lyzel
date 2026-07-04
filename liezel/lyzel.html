@@ -9,52 +9,112 @@
     <title>Portfolio website</title>
   </head>
   <body>
+    <!-------------------------------------- Navigation Bar -------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="#">Liesel</a>
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold" href="#">Liesel Studio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <section class="home">
-      <div class="home-img">
-        <img src="https://picsum.photos/200/300" alt="fisheye" />
-      </div>
-      <div class="home-content">
-        <h1>Hi, it's <span>Liesel</span></h1>
-        <h3 class="typing-text">
-          I'm the LUCKIEST GIRL in the whole entire world<span></span>
-        </h3>
+<!-------------------------------------- Hero Section -------------------------------------->
+    <header class="parallax-hero">
+      <div class="container hero-content">
+        <span class="eyebrow">Websites & Landing Pages for Small Businesses</span>
+        <h1>Enter a title here.</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Contrary to popular belief, Lorem Ipsum is not simply random text. 
+          It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+        
         </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+          <a href="#services" class="btn btn-outline-light btn-lg">Explore Services</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section-light">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h2>Modern websites made for small businesses</h2>
+            <p>
+              We combine clean design, responsive layouts, and smart user experience to
+              make sure your site looks professional and works beautifully on every device.
+            </p>
+            <p>
+              Whether you need a landing page to launch a new offer or a full website to showcase your business,
+              we build with your goals in mind.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-card">
+              <h3>Why choose us?</h3>
+              <ul>
+                <li>Fast and responsive websites</li>
+                <li>Clean modern design</li>
+                <li>Mobile-friendly layouts</li>
+                <li>Focus on conversions and clarity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <div class="social-icons">
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    <a href="#" class="btn btn-primary">Hire Me</a>
-    <!-- DONT TOUCH THIS BUM -->
+
+    <section id="services" class="parallax-section">
+      <div class="container py-5">
+        <div class="text-center mb-4">
+          <span class="eyebrow">Our Services</span>
+          <h2>Everything you need to launch online</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card">
+              <h3>Landing Pages</h3>
+              <p>High-converting pages for products, services, and promotions.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h3>Business Websites</h3>
+              <p>Professional websites for small companies ready to grow online.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h3>UI & Branding</h3>
+              <p>Clean visuals and polished layouts that reflect your brand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-light">
+      <div class="container py-5 text-center">
+        <h2>Ready to build something amazing?</h2>
+        <p>Let’s create a website that helps your business stand out and attract more customers.</p>
+        <a href="mailto:hello@yourbusiness.com" class="btn btn-primary btn-lg">Contact Us</a>
+      </div>
+    </section>
+<!-------------------------------------- Footer -------------------------------------->
+    <footer class="footer">
+      <div class="container py-3 text-center">
+        <p class="mb-0">© 2026 Liesel Studio. Built for small businesses.</p>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

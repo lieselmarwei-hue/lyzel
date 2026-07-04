@@ -1,24 +1,98 @@
 body {
-  background: rgb(164, 196, 233);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
 }
 
-h1 {
-  color: red;
+.navbar {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
 }
 
-.social-icons {
-  text-align: center;
-  margin: 20px 0;
+.parallax-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.82), rgba(59, 130, 246, 0.65)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80") center/cover fixed;
+  color: white;
+  padding: 80px 0;
 }
 
-.social-icons a {
-  margin: 0 15px;
-  font-size: 24px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
 }
 
-.social-icons a:hover {
-  color: #007bff;
+.eyebrow {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.section-light {
+  background: #f8fafc;
+}
+
+.feature-card,
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.feature-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.parallax-section {
+  position: relative;
+  color: white;
+  background: linear-gradient(135deg, rgba(2, 6, 23, 0.82), rgba(14, 116, 144, 0.72)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80") center/cover fixed;
+  padding: 90px 0;
+}
+
+.parallax-section h2 {
+  margin-bottom: 12px;
+}
+
+.service-card {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1f2937;
+}
+
+.footer {
+  background: #0f172a;
+  color: #e2e8f0;
 }
