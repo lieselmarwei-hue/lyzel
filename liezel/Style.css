@@ -1,13 +1,24 @@
 body {
-background: rgb(164, 196, 233);
-
+  background: rgb(164, 196, 233);
 }
 
-h1 { 
-
-    color:red;
+h1 {
+  color: red;
 }
 
-section.p {
-    background-color:rgb(219, 184, 119);
+.social-icons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
 }
